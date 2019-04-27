@@ -33,8 +33,8 @@ public class EncodeTest {
     @Test
     public void encrypt_testOtherCharacterEncryption_String(){
         Encode testEncrypt = new Encode();
-        String expectedOutput  = "def3!";
-        assertEquals(expectedOutput, testEncrypt.encrypt("cde3!", 1));
+        String expectedOutput  = "bcd25!";
+        assertEquals(expectedOutput, testEncrypt.encrypt("abc25!", 1));
     }
 
 }

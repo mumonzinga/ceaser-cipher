@@ -13,27 +13,32 @@ public class DecodeTest {
         String expectedOutput = "H";
         assertEquals(expectedOutput, testDecrypt.decrypt("I", 1));
     }
+
     @Test
-    public void encrypt_testWordEncryption_String(){
+    public void encrypt_testWordEncryption_String() {
         Decode testDecrypt = new Decode();
-        String expectedOutput  = "pear";
+        String expectedOutput = "pear";
         assertEquals(expectedOutput, testDecrypt.decrypt("qfbs", 1));
     }
+
     @Test
-    public void encrypt_testLetterCase_String(){
+    public void encrypt_testLetterCase_String() {
         Decode testDecrypt = new Decode();
-        String expectedOutput  = "MaMa";
+        String expectedOutput = "MaMa";
         assertEquals(expectedOutput, testDecrypt.decrypt("NbNb", 1));
     }
+
     @Test
-    public void encrypt_testSentenceEncryption_String(){
+    public void encrypt_testSentenceEncryption_String() {
         Decode testDecrypt = new Decode();
-        String expectedOutput  = "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG";
+        String expectedOutput = "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG";
         assertEquals(expectedOutput, testDecrypt.decrypt("QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD", 23));
     }
+
     @Test
-    public void encrypt_testOtherCharacterEncryption_String(){
+    public void encrypt_testOtherCharacterEncryption_String() {
         Decode testDecrypt = new Decode();
-        String expectedOutput  = "abc25!";
+        String expectedOutput = "abc25!";
         assertEquals(expectedOutput, testDecrypt.decrypt("bcd25!", 1));
+    }
 }
