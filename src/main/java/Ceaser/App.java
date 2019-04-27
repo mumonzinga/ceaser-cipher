@@ -11,7 +11,6 @@ import static main.java.Ceaser.Decode.decrypt;
 
 public class App {
 
-
     public static void main(String[] args) {
 
         Scanner myScanner = new Scanner(System.in);
