@@ -25,5 +25,10 @@ public class DecodeTest {
         String expectedOutput  = "MaMa";
         assertEquals(expectedOutput, testDecrypt.decrypt("NbNb", 1));
     }
-
+    @Test
+    public void encrypt_testSentenceEncryption_String(){
+        Decode testDecrypt = new Decode();
+        String expectedOutput  = "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG";
+        assertEquals(expectedOutput, testDecrypt.decrypt("QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD", 23));
+    }
 }
