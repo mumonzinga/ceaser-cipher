@@ -19,5 +19,11 @@ public class DecodeTest {
         String expectedOutput  = "pear";
         assertEquals(expectedOutput, testDecrypt.decrypt("qfbs", 1));
     }
+    @Test
+    public void encrypt_testLetterCase_String(){
+        Decode testDecrypt = new Decode();
+        String expectedOutput  = "MaMa";
+        assertEquals(expectedOutput, testDecrypt.decrypt("NbNb", 1));
+    }
 
 }
