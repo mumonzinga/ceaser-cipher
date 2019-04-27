@@ -24,4 +24,11 @@ public class EncodeTest {
         String expectedOutput  = "NbNb";
         assertEquals(expectedOutput, testEncrypt.encrypt("MaMa", 1));
     }
+    @Test
+    public void encrypt_testSentenceEncryption_String(){
+        Encode testEncrypt = new Encode();
+        String expectedOutput  = "QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD";
+        assertEquals(expectedOutput, testEncrypt.encrypt("THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG", 23));
+    }
+
 }
