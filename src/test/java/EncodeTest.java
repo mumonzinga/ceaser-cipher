@@ -18,4 +18,10 @@ public class EncodeTest {
         String expectedOutput  = "qfbs";
         assertEquals(expectedOutput, testEncrypt.encrypt("pear", 1));
     }
+    @Test
+    public void encrypt_testLetterCase_String(){
+        Encode testEncrypt = new Encode();
+        String expectedOutput  = "NbNb";
+        assertEquals(expectedOutput, testEncrypt.encrypt("MaMa", 1));
+    }
 }
